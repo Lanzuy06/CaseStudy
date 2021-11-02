@@ -1,0 +1,38 @@
+
+client's scenario:
+
+1. the car demonstrated several standout capabilities, including driving to all corners of the test track enclosure. It navigated around several obstacles celebrated by huge cheers from the audience.
+
+2. It even stopped suddenly when a child’s toy was launched in the driving path during the demonstration. 
+
+3. The WhizBot demonstrated what other driverless car manufacturers had yet to achieve: positive control in unpredictable situations.
+
+4. began to accelerate uncontrollably
+
+5. the car started to play random music and sounds that could be heard over the loudspeaker.
+
+6. The car completely shut down and the in-car display flashed a glaring error message.
+	- hacking?
+	- code error
+-----------------------------------
+
+possible factors on what went wrong:
+
+1. oversight of implementation of codes[4,5,6]
+	- insuffucient control parameters
+	- behavior of the car was designed on a specific environment(not flexible)
+
+2. network security[6]
+
+3. no CB to pentest the security. (no countermeasures)[6]
+
+4. Lidar wasn't used efficiently on 1.0
+
+5. AI used on 1.0 wasn't enough
+
+
+------------------------------------
+clients view:
+
+1. Whiz Dynamics is unclear as to what caused the WhizBot 1.0 to fail during the launch
+
