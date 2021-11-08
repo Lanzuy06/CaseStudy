@@ -1,0 +1,28 @@
+package com.lanz.clinicals.util;
+
+import java.util.List;
+
+import com.lanz.clinicals.model.ClinicalData;
+
+public class BMICalculator {
+	
+	
+public static void calculateBMI(List<ClinicalData> clinicalData, ClinicalData eachEntry) {
+		if(eachEntry.getComponentName().equals("hw")) {
+
+			if(eachEntry.getComponentName().equals("hw")) {
+				String[] heightAndWeight= eachEntry.getComponentValue().split("/");
+
+				if(heightAndWeight != null && heightAndWeight.length>0) {
+
+					float heightInMetres = Float.parseFloat(heightAndWeight[0]) * 0.4536F;
+					float bmi = Float.parseFloat(heightAndWeight[1])/(heightInMetres*heightInMetres);
+					ClinicalData bmiData = new ClinicalData();
+					bmiData.setComponentName("bmi");
+					bmiData.setComponentValue(Float.toString(bmi));
+					clinicalData.add(bmiData);
+				}
+			}
+		}
+	}
+}
